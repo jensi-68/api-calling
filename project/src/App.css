@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Patrick+Hand&family=Rubik+Microbe&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  background-color: #000000!important;
+}
+img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+a
+{
+  text-decoration: none;
+  text-transform: capitalize;
+}
+/* -----------------------------------------loader */
+.load
+{
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.loader {
+  color: #FFF;
+  position: relative;
+  display: inline-block;
+  margin-top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  letter-spacing: 4px;
+  box-sizing: border-box;
+}
+.loader::before {
+  content: '';  
+  position: absolute;
+  right: 70px;
+  bottom: 10px;
+  height: 28px;
+  width: 5.15px;
+  background: currentColor;
+  box-sizing: border-box;
+  animation: animloader1 1s linear infinite alternate;
+}
+.loader::after {
+  content: '';  
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 125px;
+  top: 2px;
+  border-radius: 50%;
+  background: #06f0f8;
+  box-sizing: border-box;
+  animation: animloader 1s linear infinite alternate;
+}
+
+@keyframes animloader {
+  0% {
+    transform: translate(0px, 0px) scaleX(1);
+  }
+  14% {
+    transform: translate(-12px, -16px) scaleX(1.05);
+  }
+  28% {
+    transform: translate(-27px, -28px) scaleX(1.07);
+  }
+  42% {
+    transform: translate(-46px, -35px) scaleX(1.1);
+  }
+  57% {
+    transform: translate(-70px, -37px) scaleX(1.1);
+  }
+  71% {
+    transform: translate(-94px, -32px) scaleX(1.07);
+  }
+  85% {
+    transform: translate(-111px, -22px) scaleX(1.05);
+  }
+  100% {
+    transform: translate(-125px, -9px) scaleX(1);
+  }
+}
+
+@keyframes animloader1 {
+  0% {
+    box-shadow: 0 -6px, -122.9px -8px;
+  }
+  25%, 75% {
+    box-shadow: 0 0px, -122.9px -8px;
+  }
+  100% {
+    box-shadow: 0 0px, -122.9px -16px;
+  }
+}
+.pt-115
+{
+  padding-top: 115px;
+}
+.mt-5
+{
+  margin-top: 5px;
+}
+.mt-100
+{
+  margin-top: 100px;
+}
+.mt-200
+{
+  margin-top: 200px;
+}
+/* -------------------------------------------------------------header */
+.logo
+{
+  width: 100px;
+  height: 100px;
+}
+.logo img
+{
+  width: 80px;
+  height: 80px;
+}
+.header
+{
+  background-color: 	#000000;
+  border-bottom: rgb(0, 225, 255) 1px solid;
+}
+.main-menu li a
+{
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px 5px;
+  padding: 10px;
+  font-family: 'Rubik Microbe', cursive;
+  color: rgb(118, 255, 225);
+  text-shadow: rgb(0, 255, 242) 3px 3px 3px;
+}
+.main-menu li a span
+{
+  font-size: 25px;
+  text-shadow: rgb(0, 255, 191) 3px 3px 3px;
+}
+.header-btn
+{
+  background-color: #434242;
+  padding: 0px;
+  font-size: 12px;
+}
+button
+{
+  background-color: rebeccapurple;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+.header-btn a
+{
+  font-size: 12px;
+}
+input[type = 'text']
+{
+  padding: 5px 25px;
+}
+/* ----------------------------------------------------content css */
+.main
+{
+  width: 100%;
+}
+.section-1
+{
+  width: calc(33.33% - 20px);
+  margin: 10px;
+}
+.main-img
+{
+  width: 100%;
+  height: 300px;
+  /* background-color: red; */
+}
+
+.main-img img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rating
+{
+  font-size: 20px;
+}
+.rating i
+{
+  color: red;
+}
+.box
+{
+  background-color: #222222;
+  height: 650px;
+  border: #06f0f8 1px solid;
+  padding: 10px 20px;
+}
+.m-icon span
+{
+  font-size: 15px;
+}
+.m-icon
+{
+  font-size: 35px;
+}
+.price
+{
+  text-align: center;
+
+}
+
+
+
+.other-con
+{
+  text-align: center;
+  color: rgb(0, 247, 255);
+}
+.other-con h1
+{
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.other-con p
+{
+  color: #38d5dace;
+}
+.btn
+{
+  background-color: #06f0f8;
+  width: 200px;
+  height: auto;
+  /* position: relative; */
+  top: 20px;
+  left: 50px;
+  position: absolute;
+  margin: 10px;
+}
+.btn a 
+{
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: #06f0f8;
+  /* width: 200px; */
+  /* height: auto; */
+  display: block;
+  transition: 3s;
+}
+.btn a:hover
+{
+  color: rgb(0, 225, 255);
+  background-color: #000000;
+}
+/* ------------------------------product css */
+.p-main-img
+{
+  width: 550px;
+  height: 450px;
+  border: #06f0f8 1px solid;
+  padding: 30px;
+  border-radius: 50px;
+}
+.p-main-img img
+{
+  border-radius: 50px;
+}
+.p-other-con
+{
+  text-align: left;
+  color: #06f0f8d0;
+}
+.box1
+{
+  /* background-color: #222222; */
+  gap: 70px;
+  text-transform: capitalize;
+}
+.p-span
+{
+  width: 600px;
+  margin-top: 10px;
+  height: 1px;
+  background-color: #042829;
+}
+.p-dis
+{
+  font-size: 25px;
+}
+.p-icon
+{
+  font-size: 30px;
+  padding: 10px 20px;
+}
+.zero
+{
+  font-size: 20px;
+}
+.p-brand
+{
+  font-size: 24px;
+  color: #61d7db85;
+  padding: 10px 0px;
+}
+.p-stock
+{
+  font-size: 24px;
+  color: #61d7db85;
+  padding: 10px 0px;
+}
+.p-btn
+{
+  padding: 10px 40px;
+  /* margin: 30px; */
+  background-color: #06f0f8;
+}
+.p-btn::before
+{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 100%;
+  transition: 3s;
+  background-color: #222222;
+}
+.p-btn:hover::before
+{
+  width: 100%;
+  color: #06f0f8;
+}
+.p-btn:hover a
+{
+  color: #06f0f8;
+}
+.p-btn a
+{
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+.p-relative
+{
+  position: relative;
+}
+
+
+/* ----------------------------------------------------footer css */
+.footer-sec
+{
+  background-color: #222222;
+  color: rgb(117, 248, 231);
+  font-family: 'Rubik Microbe', cursive;
+}
+.footer-sec h5
+{
+  text-transform: capitalize;
+}
+.footer-sec ul a
+{
+  color: rgb(117, 248, 231);
+  text-decoration: none;
+}
+.footer-widget ul li span
+{
+  font-size: 20px;
+  margin-right: 3px;
+}

@@ -1,0 +1,29 @@
+
+body
+{
+  background-color: #202329!important;
+
+}
+
+.main
+{
+  width: 50%;
+  height: 250px;
+  padding: 20px;
+  color: aliceblue;
+}
+.box
+{
+  background-color: #3c3e44;
+  border-radius: 30px;
+  margin: 30px 10px;
+}
+img
+{
+  overflow: hidden;
+  /* border-radius: 30px; */
+  object-fit: cover;
+  width: 100%;
+}
+
+
